@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="39173a45-db60-44e0-905b-7999d0115921" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,6 +217,10 @@
       <workItem from="1658115767855" duration="15911000" />
       <workItem from="1666074620804" duration="17000" />
       <workItem from="1671611546920" duration="1092000" />
+      <workItem from="1671760303382" duration="910000" />
+      <workItem from="1672133787235" duration="49000" />
+      <workItem from="1672310818333" duration="604000" />
+      <workItem from="1675232840578" duration="9076000" />
     </task>
     <servers />
   </component>

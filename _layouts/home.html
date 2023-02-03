@@ -2,22 +2,44 @@
 layout: default
 ---
 
-<div>
+<header>
+    {% if site.theme_config.show_navbar == true %}
+    {% include horizontal_list.html collection=site.data.home.navbar_entries %}
+    <div class="dashed"></div>
+    {% endif %}
 
-    {{ content }}
-    <div>&nbsp;</div>
-    <ul class="post-list">
-        {% for post in site.posts %}
-        <li>
-            {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <h2>
-                <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
-            </h2>
-            <span>{{ post.excerpt }}</span>
+    <h1>{{ site.title }}</h1>
+    {% if site.theme_config.show_description == true %}
+    <p>{{ site.description }}</p>
+    {% endif %}
+</header>
 
-        </li>
-        {% endfor %}
-    </ul>
+{{ content }}
 
-</div>
+{% if site.theme_config.show_projects == true %}
+<h2>{{ site.theme_config.home.title_projects }}</h2>
+{% include card_list.html collection=site.data.home.project_entries %}
+{% endif %}
+
+{% if site.theme_config.show_misc_list == true %}
+<h2>{{ site.theme_config.home.title_misc_list }}</h2>
+{% include vertical_list.html collection=site.data.home.misc_entries %}
+{% endif %}
+
+{% if site.theme_config.show_blog == true %}
+<h2>{{ site.theme_config.home.title_blog }}</h2>
+{% include post_list.html %}
+{% endif %}
+
+{% if site.theme_config.show_old_projects == true %}
+<h2>{{ site.theme_config.home.title_old_projects }}</h2>
+{% include card_list.html collection=site.data.home.old_project_entries %}
+{% endif %}
+
+
+{% if site.theme_config.show_footer == true %}
+<footer>
+    <div class="dashed"></div>
+    {% include horizontal_list.html collection=site.data.home.footer_entries %}
+</footer>
+{% endif %}
